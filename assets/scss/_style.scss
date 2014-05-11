@@ -1,0 +1,55 @@
+/*
+  SASS Variables
+*/
+$base-bg-color: #171b1e;
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+body {
+  background: $base-bg-color;
+  color: #fff;
+  font-family: 'Cutive', serif;
+  font-size: 1.25em;
+}
+h2 {
+  font-size: 2em;
+}
+p {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.content-row {
+  display: table;
+  width: 100%;
+}
+.content-tab {
+  display: table-cell;
+  vertical-align: middle;
+  width: 33.333%;
+  height: 20em;
+  border: 1px dashed;
+  padding: 1.6em;
+  border-color: transparent tint( $base-bg-color, 8%) tint( $base-bg-color, 8%) transparent;
+  background-color: $base-bg-color;
+  text-align: center;
+}
+.content-tab.active {
+  /*#171b1e*/
+  background-color: lighten( $base-bg-color, 1%) ;
+}
+.content-tab:hover {
+  background-color: lighten( $base-bg-color, 1%) ;
+  cursor: pointer;
+}
+.logo-sup {
+  display: inline-block;
+  margin: 20px -20px 0 0;
+  vertical-align: top;
+}
+.footer {
+  margin: 0 5%;
+}
