@@ -1,11 +1,11 @@
-# Created by http://www.gitignore.io
+*.log
+*.pid
+*.seed
 
-### WebStorm ###
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
-
-## Directory-based project format
+.sass-cache
+.grunt
+.lock-wscript
 .idea/
 .idea_modules/
 
 node_modules
-.sass-cache
