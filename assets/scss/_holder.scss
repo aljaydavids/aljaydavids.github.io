@@ -20,6 +20,7 @@ a {
 }
 h1 {
   font-family: 'Cutive', serif;
+  margin-top: 0.27em;
 }
 small {
   display: block;
@@ -81,4 +82,27 @@ small {
 }
 .text-center {
   text-align: center;
+}
+.email-experiment {
+  background: #D0E047;
+  color: $base-bg-color;
+  font-weight: 200;
+  a {
+    color: darken(#d6e04c, 30%);
+  }
+  .content {
+    background: transparent;
+  }
+  small {
+    font-weight: 200;
+  }
+  .btn-contact {
+    background-color: $base-bg-color;
+    border: 1px solid lighten($base-bg-color, 10%);
+    color: #fff;
+    &:hover {
+      background-color: lighten($base-bg-color, 10%);;
+      color: #fff;
+    }
+  }
 }
