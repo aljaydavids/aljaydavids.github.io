@@ -24,7 +24,7 @@
         <img src="assets/images/jero-logo-wrap.png" alt="jero" class="logo"/>
         <h1>Al-jerreau Davids<small>Web designer &amp; Front-end Developer</small></h1>
         <p class="description">
-            27 year old creator of clean, minimalistic and user-friendly web designs, currently working for <strike><a id="link-travelstart" href="http://www.travelstart.co.za" target="_blank">Travelstart.co.za</a></strike> <a id="link-booking" href="http://www.booking.co.za" target="_blank">Booking.com</a>
+            28 year old creator of clean, minimalistic and user-friendly web designs, currently working for <a id="link-booking" href="http://www.booking.co.za" target="_blank">Booking.com</a>
         </p>
         <a id="link-mail" href="mailto:aljayog19@gmail.com?subject=Howzit bru" class="btn-contact">Get in touch</a>
         <p>Or...</p>
@@ -36,9 +36,9 @@
     </div>
     <footer class="footer">
         <p>
-            Copyright Jero.co 2014
+            Copyright Jero.co 2015
             <span class="pull-right"><a id="link-twitter-follow" href="https://twitter.com/aljaydavids" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @aljaydavids</a></span>
-        </p>
+            </p>
         <p class="text-center">
 
         </p>
@@ -76,8 +76,8 @@
             ga('send', 'event', 'social', 'click', 'send mail');
         });
 
-        $('#link-travelstart').on('click', function() {
-            ga('send', 'event', 'external', 'click', 'click travelstart link');
+        $('#link-booking').on('click', function() {
+            ga('send', 'event', 'external', 'click', 'click booking link');
         });
     });
 
@@ -94,7 +94,6 @@
         if (!intentEvent) return;
         var label = intentEvent.region;
         ga('send', 'event', 'social', 'click', 'twitter follow');
-        console.log('send', 'event', 'social', 'click', 'twitter follow');
     }
 
     function followIntentToAnalytics (intentEvent) {
