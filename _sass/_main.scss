@@ -1,0 +1,99 @@
+/*
+  SASS Variables
+*/
+$base-bg-color: #171b1e;
+$base-font-color: $base-bg-color;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  color:$base-font-color;
+}
+.wrapper {
+  max-width: em(960);
+  margin: 0 auto;
+}
+.logo {
+	width: em(120);
+	height: auto;
+  	margin-bottom: 0.6em;
+}
+.content {
+  padding: 1.6em;
+  text-align: center;
+}
+.content-tab.active {
+  background-color: lighten( $base-bg-color, 1%) ;
+}
+.description {
+  margin: 2em 0;
+  font-size: 1.6em;
+  font-weight: 200;
+  line-height: 140%;
+}
+.social-links {
+  margin: 0 0 3em;
+  a {
+    margin: 0 0.6em;
+    border: none;
+  }
+  a:hover {
+  	background: white;
+  }
+}
+.btn-contact {
+	display: none;
+	color: $base-font-color;
+	border: 1px solid $base-font-color;
+	padding: 12px 24px;
+	text-decoration: none;
+	border-radius: 30px;
+}
+.mobile-mail {
+	display: block;
+}
+.mobile-mail .btn-contact {
+	float: none;
+	display: block;
+	margin: 0 auto;
+	max-width: em(300);
+}
+.footer {
+  margin: 0 5%;
+  font-size: 80%;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.text-center {
+  text-align: center;
+}
+.prev-job {
+	color: #aaa;
+	margin-right: 10px;
+	display: inline-block;
+}
+@media only screen and (min-width: 768px) {
+	.logo {
+		float: left;
+	}
+	.main-heading {
+		font-size: 4em;
+		margin-top: 120px;
+	}
+	.description {
+		font-size: 2em;
+	}
+	.mobile-mail {
+		display: none;
+	}
+	.btn-contact {
+		display: inline;
+		float: right;
+	}
+}
