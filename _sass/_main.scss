@@ -2,13 +2,28 @@
   SASS Variables
 */
 $base-bg-color: #171b1e;
-$base-font-color: $base-bg-color;
+$base-font-color: #fff;
 
 * {
   box-sizing: border-box;
 }
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+html {
+	background: url('../images/home-office.jpg') no-repeat;
+	background-size: cover;
+}
 body {
-  background: #fff;
+	background: -moz-linear-gradient(-45deg,  rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,0.6)), color-stop(100%,rgba(0,0,0,0.9))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.9) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.9) 100%); /* IE10+ */
+	background: linear-gradient(135deg,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.9) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#e6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   color:$base-font-color;
 }
 .wrapper {
@@ -40,7 +55,7 @@ body {
     border: none;
   }
   a:hover {
-  	background: white;
+  	background: transparent;
   }
 }
 .btn-contact {
